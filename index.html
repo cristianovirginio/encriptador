@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
     
     <title>Encriptador</title>
 </head>
 <body>
     <header>
-        <div class="imageheades">
+        <div class="imageHeader">
             <img src="./styles/Logo.jpg" alt="Imagem cabeçalho">
         </div>
 
     </header>
     <main>
+        <div class="container">
+            <div class="containerInput">
+                <input type="text" id="initialText" placeholder="Digite o seu texto">
+            </div>
+            <div class="containerImage">
+                <img src="./styles/High quality products 1 1.jpg" alt="Imagem lateral encriptador">
+                <div class="containerImageMensage">
+                    <h2>Nenhuma mensagem encontrada.</h2>
+                    <p>
+                        Digite um texto que você deseja criptografar ou descriptografar.
+                    </p>
+                </div>
+        
+
+            </div>
+           
+        </div>
+        <div class="containerButtons">
+            <button class="btn btn-primary" onclick="encripText()" type="button">Criptografar</button>
+            <button class="btn btn-secondary" type="button">Descriptografar</button>
+            
+                 
+        </div>
 
     </main>
-    <footer>
-
-    </footer>
-    
+    <script src="./assets/app.js"></script>
 </body>
 </html>

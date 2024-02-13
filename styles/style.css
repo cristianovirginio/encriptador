@@ -1,0 +1,24 @@
+:root{
+    --backgroundPage-color:#F3F5FC;
+    --bckgroundColor-aside:#FFFFFF;
+    --input-color:#0A3871;
+    
+
+}
+
+body{
+    padding:0px;
+    margin:0px;
+    background-color: var(--backgroundPage-color);
+}
+.container{
+    display:flex;
+   justify-content: space-between;
+}
+#initialText{
+    font-family:Inter;
+    font-size: 2rem;
+    font-weight:400px;
+
+    color: var( --input-color)
+}
