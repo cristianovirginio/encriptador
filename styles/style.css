@@ -1,15 +1,22 @@
 :root{
     --backgroundPage-color:#F3F5FC;
-    --bckgroundColor-aside:#FFFFFF;
+    --backgroundColor-aside:#FFFFFF;
     --input-color:#0A3871;
-    
+    --footer-color:#176B87;
+    --color-text-gray:#495057;
+    --color-text-answers:#343A40;
+    --color-button-primary:#0A3871;
+    --color-button-secondary:#D8DFE8;
 
 }
 
 body{
     padding:0px;
     margin:0px;
+
     background-color: var(--backgroundPage-color);
+
+    font-family:Inter;
 }
 .container{
     display:flex;
@@ -21,4 +28,81 @@ body{
     font-weight:400px;
 
     color: var( --input-color)
+}
+/*/////////// image//////////////////////*/
+.containerImage{
+    width: 25rem;
+    height:56.25rem;
+
+    border-radius:2rem;
+
+    background-color: var(--backgroundColor-aside);
+}
+.containerImage h2{
+    color: var(--color-text-answers);
+
+    font-weight:700;
+    font-size:2rem;
+
+    text-align:center;
+}
+/*////////////buttons Area///////////////*/
+.buttonsText{
+    display:flex;
+    align-items: center;
+    color:var(--color-text-gray);
+
+    font-weight:400;
+    font-size:.7rem;
+    gap:.5rem;
+
+}
+.buttonsText img{
+    width:1rem;
+    height:1rem;
+
+}
+.buttonsButton{
+    display:flex;
+    gap:2rem;
+   
+}
+.btn-primary{
+    width:20.5rem;
+
+    padding: 1.5rem;
+    border: solid .06rem;
+    border-radius:1.5rem;
+
+    font-family: Inter;
+    font-size: 1rem;
+    line-height:1.21rem;
+    font-weight: 400;
+
+    background-color: var(--color-button-primary);
+    color: var(--backgroundColor-aside)
+
+}
+.btn-secondary{
+    width:20.5rem;
+
+    padding: 1.5rem;
+    border: solid .06rem;
+    border-radius:1.5rem;
+
+    font-family: Inter;
+    font-size: 1rem;
+    line-height:1.21rem;
+    font-weight: 400;
+
+    background-color: var(--color-button-secondary);
+    color: var(--color-button-primary)
+
+    
+}
+
+
+footer p{
+    background-color: var(--footer-color);
+    color: var(--backgroundColor-aside)
 }
