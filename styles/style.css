@@ -7,6 +7,7 @@
     --color-text-answers:#343A40;
     --color-button-primary:#0A3871;
     --color-button-secondary:#D8DFE8;
+    --color-button-secondary-hover: #1D24CA;
 
 }
 
@@ -18,25 +19,100 @@ body{
 
     font-family:Inter;
 }
+.jumbotron{
+    width:100vw;
+    height:100vh;;
+}
 .container{
     display:flex;
-   justify-content: space-between;
+    justify-content: space-evenly;
+
 }
+/*///////////HEADER/////////////*/
+.imageHeader{
+ margin:2.5rem 0 0 2.5rem;  
+ width:7.5rem;
+ height:3rem;
+
+ gap:2.5rem;
+
+}
+.imageHeader img{
+    width:100%;
+    height:100%;
+
+}
+/*///////////////INPUT AREA/////////*/
+.containerInput{
+    display:flex;
+    flex-direction:column; 
+
+    width:75vw;
+    height:80%;
+   
+
+}
+
 #initialText{
     font-family:Inter;
     font-size: 2rem;
     font-weight:400px;
 
+    width:42.5rem;
+    height:auto;
+    margin:10.5rem 0 0 10rem;
+
+    background-color: var(--backgroundPage-color);
+    border:none;
+
     color: var( --input-color)
 }
-/*/////////// image//////////////////////*/
+/*/////////// SCREEN ASIDE//////////////////////*/
 .containerImage{
     width: 25rem;
-    height:56.25rem;
+    height:59rem;
+
+    display:flex;
+  
+    align-items: center;
+    flex-direction:column;
 
     border-radius:2rem;
 
     background-color: var(--backgroundColor-aside);
+    
+}
+.screenImage{
+    
+    visibility:hidden;
+}
+.screenArea{
+    visibility:hidden;
+
+}
+#screenArea{
+  
+    height:100%;
+
+    position:absolute;
+    
+}
+.containerImage-img{
+    width:21rem;
+    height:19rem;
+    margin-top:17.6rem;
+}
+.containerImageMensage{
+    width:21rem;
+    height:7.6rem;
+    gap:1rem;
+
+    text-align:center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Inter;
+    color: var(--color-text-gray);
+    
 }
 .containerImage h2{
     color: var(--color-text-answers);
@@ -45,8 +121,36 @@ body{
     font-size:2rem;
 
     text-align:center;
+
 }
+.copyArea{
+    width:21rem;
+    height:48rem;
+    margin-top: 2.5rem;
+
+    text-align:center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Inter;
+    Line-height: 2.2rem;
+
+    color: var(--color-text-gray);
+
+    display:flex;
+    flex-direction: column;
+    overflow:auto;
+   
+
+}
+
 /*////////////buttons Area///////////////*/
+.containerButtons{
+    margin-top:36rem; 
+    margin-left:-5rem;
+    margin-bottom:3rem;
+   
+}
+
 .buttonsText{
     display:flex;
     align-items: center;
@@ -54,17 +158,24 @@ body{
 
     font-weight:400;
     font-size:.7rem;
+
+    width:15,7rem;
+    height: 1.1rem;
+    margin-left: 15rem;
     gap:.5rem;
 
 }
 .buttonsText img{
     width:1rem;
     height:1rem;
-
+    
 }
 .buttonsButton{
     display:flex;
-    gap:2rem;
+
+    margin-left: 15rem;
+    margin-top:.5rem;
+    gap:1.5rem;
    
 }
 .btn-primary{
@@ -96,13 +207,57 @@ body{
     font-weight: 400;
 
     background-color: var(--color-button-secondary);
-    color: var(--color-button-primary)
+    color: var(--color-button-primary);
 
     
 }
+.btn-primary:hover{
 
+    background-color: var(--backgroundColor-aside);
+    color: var(--color-button-primary);
+    
+}
+.btn-secondary:hover{
+    background-color: var(--color-button-secondary-hover);
+    color: var( --color-button-secondary);
+   
+}
+.asideButton {
+    width:330px;
+    height: 4rem;
 
-footer p{
+    font-family: Inter;
+    font-size: 1rem;
+    line-height:1.21rem;
+    font-weight: 400;
+
+    border-radius:1.5rem;
+    border:.06rem solid var(--color-button-primary);
+    padding:1.5rem;
+
+    background-color:var(--backgroundColor-aside);
+    color:var(--color-button-primary);
+
+    gap:.5rem;
+
+  
+}
+
+footer{
     background-color: var(--footer-color);
-    color: var(--backgroundColor-aside)
+    color: var(--backgroundColor-aside);
+
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    height:3rem;
+}
+footer p{
+
+    text-align: center;
+    font:400 1.2rem Inter;
+
+    opacity:.5;
+
+    
 }

@@ -11,49 +11,67 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <header>
-        <div class="imageHeader">
-            <img src="./styles/Logo.jpg" alt="Imagem cabeçalho">
-        </div>
+    <div class="jumbotron">
+            <header>
+            <div class="imageHeader">
+                <img src="./styles/Logo.jpg" alt="Imagem cabeçalho">
+            </div>
 
-    </header>
-    <main>
-        <div class="container">
-            <div class="containerInput">
-                <input type="text" id="initialText" placeholder="Digite o seu texto">
-                <div class="containerButtons">
-                    <div class="buttonsText">
-                        <img src="./styles/Group.png" alt="Imagen exclamação Buttons ">
-                        <p>Apenas letras minusculas e sem acento</p>
-                    </div>
-                    <div class="buttonsButton">
-                        <button class="btn-primary" onclick="encripText()" type="button">Criptografar</button>
-                        <button class="btn-secondary" type="button">Descriptografar</button>
-        
-                    </div>
-                         
-                </div>  
-            </div>
-            <div class="containerImage">
-                <img src="./styles/High quality products 1 1.jpg" alt="Imagem lateral encriptador">
-                <div class="containerImageMensage">
-                    <h2>Nenhuma mensagem encontrada</h2>
-                    <p>
-                        Digite um texto que você deseja criptografar ou descriptografar.
-                    </p>
+        </header>
+        <main>
+            <div class="container">
+                <div class="containerInput">
+                    <textarea id="initialText" placeholder="Digite o seu texto"></textarea>
+                    
+                    <div class="containerButtons">
+                        <div class="buttonsText">
+                            <img src="./styles/Group.png" alt="Imagen exclamação Buttons ">
+                            <p>Apenas letras minusculas e sem acento</p>
+                        </div>
+                        <div class="buttonsButton">
+                            <button class="btn-primary" onclick="encripText()" type="button">Criptografar</button>
+                            <button class="btn-secondary" id= "btn-secondary" onclick="decripText()" type="button">Descriptografar</button>
+            
+                        </div>
+                            
+                    </div>  
                 </div>
-        
-    
+                <div class="containerImage">
+                   <div id="screenImage">
+                        <div class="containerImage-img">
+                            <img src="./styles/High quality products 1 1.jpg" alt="Imagem lateral encriptador">
+
+                        </div>
+                        <div class="containerImageMensage">
+                            
+                            <h2>Nenhuma mensagem encontrada</h2>
+                            <p>
+                                Digite um texto que você deseja criptografar ou descriptografar.
+                            </p>
+                        </div>
+                   </div>
+                   <div  id="screenArea" class="screenArea" >
+                        <div class="screenText">
+                            <p class="copyArea" id="copyArea">
+                            
+                            </p>
+                        </div>
+                        <div class="screenButton">
+                            <button type="button" class="asideButton">Copiar</button>
+                        </div>  
+                    </div>
+                    
+
+                </div>
+              
             </div>
-          
-           
-        </div>
+            
         
-       
-    </main>
-    <footer>
-        <p>Cristiano Virginio 2024</p>
-    </footer>
+        </main>
+        <footer>
+            <p> &reg; Cristiano Virginio 2024</p>
+        </footer>
+    </div>
     <script src="./assets/app.js"></script>
 </body>
 </html>
