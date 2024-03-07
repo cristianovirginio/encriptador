@@ -21,11 +21,14 @@ body{
 }
 .jumbotron{
     width:100vw;
-    height:100vh;;
+    height:98vh;
 }
 .container{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    width:99vw;
+    height:100%;
 
 }
 /*///////////HEADER/////////////*/
@@ -46,11 +49,8 @@ body{
 .containerInput{
     display:flex;
     flex-direction:column; 
-
-    width:75vw;
-    height:80%;
+    justify-content: space-between;
    
-
 }
 
 #initialText{
@@ -58,8 +58,8 @@ body{
     font-size: 2rem;
     font-weight:400px;
 
-    width:42.5rem;
-    height:auto;
+    max-width:42.5rem;
+    max-height:15rem;
     margin:10.5rem 0 0 10rem;
 
     background-color: var(--backgroundPage-color);
@@ -145,7 +145,6 @@ body{
 
 /*////////////buttons Area///////////////*/
 .containerButtons{
-    margin-top:36rem; 
     margin-left:-5rem;
     margin-bottom:3rem;
    
@@ -242,13 +241,18 @@ body{
 
   
 }
+.asideButton:hover{
+
+    background-color: var(--color-button-primary);
+    color: var(--backgroundColor-aside)
+
+}
 
 footer{
     background-color: var(--footer-color);
     color: var(--backgroundColor-aside);
 
     display:flex;
-    justify-items: center;
     justify-content: center;
     height:3rem;
 }
