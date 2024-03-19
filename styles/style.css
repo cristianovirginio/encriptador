@@ -18,7 +18,13 @@ body{
     background-color: var(--backgroundPage-color);
 
     font-family:Inter;
+    overflow:scroll;
+   
 }
+* {
+    box-sizing: border-box;
+  }
+
 .jumbotron{
     width:100vw;
     height:98vh;
@@ -31,7 +37,7 @@ body{
     height:100%;
 
 }
-/*///////////HEADER/////////////*/
+/*//////////HEADER////////////*/
 .imageHeader{
  margin:2.5rem 0 0 2.5rem;  
  width:7.5rem;
@@ -45,7 +51,8 @@ body{
     height:100%;
 
 }
-/*///////////////INPUT AREA/////////*/
+
+/*//////////////INPUT AREA////////*/
 .containerInput{
     display:flex;
     flex-direction:column; 
@@ -67,7 +74,8 @@ body{
 
     color: var( --input-color)
 }
-/*/////////// SCREEN ASIDE//////////////////////*/
+
+/*////////// SCREEN ASIDE/////////////////////*/
 .containerImage{
     width: 25rem;
     height:59rem;
@@ -143,10 +151,11 @@ body{
 
 }
 
-/*////////////buttons Area///////////////*/
+/*///////////buttons Area//////////////*/
 .containerButtons{
     margin-left:-5rem;
     margin-bottom:3rem;
+
    
 }
 
@@ -190,7 +199,9 @@ body{
     font-weight: 400;
 
     background-color: var(--color-button-primary);
-    color: var(--backgroundColor-aside)
+    color: var(--backgroundColor-aside);
+    cursor:pointer;
+    
 
 }
 .btn-secondary{
@@ -207,6 +218,7 @@ body{
 
     background-color: var(--color-button-secondary);
     color: var(--color-button-primary);
+    cursor: pointer;
 
     
 }
@@ -238,6 +250,7 @@ body{
     color:var(--color-button-primary);
 
     gap:.5rem;
+    cursor: pointer;
 
   
 }
@@ -247,7 +260,7 @@ body{
     color: var(--backgroundColor-aside)
 
 }
-
+*/
 footer{
     background-color: var(--footer-color);
     color: var(--backgroundColor-aside);
@@ -262,6 +275,129 @@ footer p{
     font:400 1.2rem Inter;
 
     opacity:.5;
+}
+@media (max-width:390px){
+ 
+    .jumbotron{
+    
+        width:100vw;
+        height:100vh;
+ 
+        overflow:visible;
+    }
+    header{
+        height:8%;
+    }
+    main{
+        height:85%;
+    }
+    footer{
+        height:4%;
+
+        background-color: var(--footer-color);
+        color: var(--backgroundColor-aside);
+
+        align-items: center;
+    }
+    .container{
+        width:99vw;
+        height:100%;
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-left: .5rem;
+
+
+    }
+ 
+    .imageHeader{
+        margin:1.4rem 0 0 1rem;  
+        width:1.8rem;
+        height:3rem;
+       
+        gap:1rem;
+       
+    }
+    .containerInput{
+      
+        margin-top: 9rem;
+       
+    }
+    #initialText{
+
+        width:95%;
+        max-height:12rem;
+
+        margin-left:.3rem;
+        margin-top:-7rem;
 
     
+     
+        border-radius:1rem;
+
+    }
+    .containerButtons{
+       margin-left:-14.5rem;
+        margin-bottom:.5rem;
+        margin-top:1rem;
+    
+       
+    }  
+    /*///////////aside image/////////////*/
+    .containerImage{
+        width:99%;
+        max-height:55rem;
+
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        overflow:scroll;
+       
+    }
+    .containerImage-img,
+    #screenImage{
+        overflow:hidden;
+        height:.1rem;
+    }
+    #screenArea{
+        width:90%;
+        height:.1rem;
+    }
+    .copyArea{
+       width:100%;
+       max-height:17rem;
+       margin-top: .5rem;
+
+       overflow:scroll;
+       
+    }
+    .screenText{
+        max-height:16rem;
+   
+    }
+    .containerImageMensage{
+        height:100%;
+        overflow:hidden;
+    }
+    /*//////// BUTTONS///////*/
+   .buttonsText{
+    margin-Top:2rem;
+   }
+    .buttonsButton{
+        flex-direction: column;
+
+        width:343px;
+        height:158px;
+
+    }
+    .btn-primary{
+        height:4rem;
+        justify-content: center;
+    }
+
+ 
+   
 }

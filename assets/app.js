@@ -16,24 +16,28 @@ function encripText(){
         var encriptacao = semAcento.replace(/e/g, "enter").replace(/i/g, "imes")
         .replace(/o/g, "ober").replace(/a/g, "ai").replace(/u/g, "ufat");
         document.querySelector('.copyArea').innerHTML = encriptacao;
-      
         document.getElementById("initialText").value = "";
+     
     }
     else{
         alert("Digite o texto que deseja ser encriptado!")
     }
 }
 function decripText(){
+    let texto = document.getElementById("initialText").value;
     const mensage = document.getElementById('copyArea').textContent;
-
+    
     if(mensage != ""){
         var decriptacao = mensage.replace(/enter/g,"e").replace(/imes/g,"i")
         .replace(/ober/g, "o").replace(/ufat/g,"u").replace(/ai/g,"a");
         document.querySelector('.copyArea').innerHTML = decriptacao;
+     
     }
-    else{
+    if(texto == "" && mensage == ""){
+        console.log("oi");
         alert("Não há texto Encriptado! Digite o texto para prosseguir")
     }
+   
 }
 function copyText(){
     var copia = document.getElementById('copyArea').textContent;
