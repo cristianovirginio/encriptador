@@ -318,23 +318,22 @@ footer p{
         width:3.5rem;
         height:3rem;
        
-        gap:1rem;
        
     }
     .containerInput{
-      
+        width:100%;
+        
         margin-top: 9rem;
        
     }
+  
     #initialText{
+      
+        max-width:22rem;
+        max-height:15rem;
 
-        width:95%;
-        max-height:12rem;
-
-        margin-left:.3rem;
+        margin-left:.1rem;
         margin-top:-7rem;
-
-    
      
         border-radius:1rem;
 

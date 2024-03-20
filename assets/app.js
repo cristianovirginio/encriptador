@@ -17,6 +17,7 @@ function encripText(){
         .replace(/o/g, "ober").replace(/a/g, "ai").replace(/u/g, "ufat");
         document.querySelector('.copyArea').innerHTML = encriptacao;
         document.getElementById("initialText").value = "";
+        document.getElementById("footer").setAttribute("class", "screenImage");
      
     }
     else{
@@ -48,6 +49,9 @@ function copyText(){
     console.log(recText)
 
     document.getElementById("copyArea").textContent = "";
+    document.getElementById("footer").removeAttribute("class", "screenImage");
+    
+
 
 
     
